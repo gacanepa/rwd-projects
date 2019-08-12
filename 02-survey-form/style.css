@@ -1,0 +1,96 @@
+html {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 10px;
+  color: #3c3c3c;
+}
+
+body {
+  background: #84ceab;
+  text-align: center;
+}
+
+header {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+#comments {
+  height: 100px;
+  resize: vertical;
+}
+
+#form-wrapper {
+  background: white;
+  padding: 5px 20px 20px 20px;
+  width: 750px;
+  margin: 35px auto;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#submit {
+  height: 40px;
+  width: 75px;
+  margin: 0 auto;
+  background: #84ceab;
+  color: 1px solid #c0c0c0;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.labels {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: top;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.controls {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 10px;
+  width: 48%;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 175px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  color: #767676;
+}
+
+.ratings {
+  margin-right: 10px;
+}

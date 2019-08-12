@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey form</title>
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Patrick+Hand&display=swap" rel="stylesheet"> 
+    <link type="text/css" href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">The FIT/Arido support team would love to hear from you!</h1>
+    </header>
+    <div id="form-wrapper">
+    <p id="description">Please let us know how we can improve our service</p>
+
+      <form action="" id="survey-form">
+
+        <!-- Name -->
+        <div class="row">
+          <div class="labels">
+            <label for="name" id="name-label">* Name: </label>
+          </div>
+          <div class="controls">
+            <input type="text" id="name" placeholder="Enter your name" class="input-field" required>
+          </div>     
+        </div> <!-- End Name -->
+      
+        <!-- Email -->
+        <div class="row">
+          <div class="labels">
+            <label for="email" id="email-label">* Email: </label>        
+          </div>
+          <div class="controls">
+            <input type="email" id="email" placeholder="Enter your email" class="input-field" required>
+          </div>    
+        </div> <!-- End Email -->
+
+        <!-- Age -->
+        <div class="row">
+          <div class="labels">
+            <label for="number" id="number-label">* Age: </label>
+          </div>
+          <div class="controls">
+            <input type="number" id="number" min="18" max="99" class="input-field" id="number-label" placeholder="How old are you?">       
+          </div>    
+        </div> <!-- End Age -->
+
+        <!-- Role -->
+        <div class="row">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label">What option best describes your current role? </label>
+          </div>
+          <div class="controls">
+            <select name="position" class="dropdown" id="dropdown">
+              <option disabled hidden selected>Select an option</option>
+              <option value="user">End user</option>
+              <option value="ku">Application Key User</option>
+              <option value="sso">Site System Owner</option>
+              <option value="manager">Line manager</option>
+              <option value="other">Other</option>
+            </select>         
+          </div>
+        </div> <!-- End Role -->
+
+        <!-- Rating -->
+        <div class="row">
+          <div class="labels">
+            <label for="rating">In a scale from 1 to 5, how would you rate your previous experiences with us? </label>
+          </div>
+          <div class="controls">
+            <ul>
+              <li class="radio">
+                <label><input type="radio" name="satisfaction" value="1" class="ratings">1</label>
+              </li>
+              <li class="radio">
+                <label><input type="radio" name="satisfaction" value="2" class="ratings">2</label>
+              </li>
+              <li class="radio">
+                <label><input type="radio" name="satisfaction" value="3" class="ratings">3</label>
+              </li>
+              <li class="radio">
+                <label><input type="radio" name="satisfaction" value="4" class="ratings">4</label>
+              </li>
+              <li class="radio">
+                <label><input type="radio" name="satisfaction" value="5" class="ratings">5</label>
+              </li>
+            </ul>                
+          </div>
+        </div> <!-- End Rating -->
+
+        <!-- Improvements -->
+        <div class="row">
+          <div class="labels">
+            <label for="preferences">Things that should be improved in the future <br>(check all that apply):</label>
+          </div>
+          <div class="controls">
+            <ul id="preferences">
+              <li class="checkbox">
+                <label><input type="checkbox" value="response-time" class="ratings">Response time</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="communication-skills" class="ratings">Communication skills</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="update-frequency" class="ratings">Update frequency</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="chat-availability" class="ratings">Chat availability</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="nothing" class="ratings">Nothing I can think of</label>
+              </li>
+            </ul>        
+          </div> 
+        </div> <!-- End Improvements -->
+
+        <!-- Comments -->
+        <div class="row">
+          <div class="labels">
+            <label for="comments">Any comments or suggestions?</label>
+          </div>
+          <div class="controls">
+            <textarea name="comments" class="input-field" id="comments" cols="30" rows="10" placeholder="Your comments here..."></textarea>
+          </div>           
+        </div> <!-- End Comments -->
+
+        <button type="submit" id="submit">Send</button>
+      </form> 
+    </div>
+  </body>
+</html>
