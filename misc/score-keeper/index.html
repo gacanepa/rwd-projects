@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Score keeper</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Game counter</h1>
+    <p>Usage: </p> 
+    <ul>
+      <li>Increment the number of points using the <span class="player">Player 1</span> and <span class="player">Player 2</span> buttons</li>
+      <li>Set the number of maximum games using the input</li>
+    </ul>
+    <div id="score">
+      <p>Current score:</p>
+      <p>
+        <span id="p1Display">0</span> to <span id="p2Display">0</span>
+      </p>
+    </div>
+    <p>Playing to: </p>
+    <input type="number" id="numInput" value="5" min="1" max="15">
+    <button id="p1">Player 1</button>
+    <button id="p2">Player 2</button>
+    <button id="reset">Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>

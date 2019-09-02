@@ -1,0 +1,23 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#score {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.winner {
+  color: green;
+}
+
+input[type="number"] {
+  display: block;
+  margin-bottom: 25px;
+}
